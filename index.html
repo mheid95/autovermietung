@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Autovermietung - Ihr Partner für Mobilität</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-car text-purple-600 text-3xl mr-3"></i>
+                    <span class="text-2xl font-bold text-gray-800">Premium Cars</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 font-medium">Home</a>
+                    <a href="#fahrzeuge" class="text-gray-700 hover:text-purple-600 font-medium">Fahrzeuge</a>
+                    <a href="#kontakt" class="text-gray-700 hover:text-purple-600 font-medium">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg pt-24 pb-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Ihre Premium<br>Autovermietung
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
+                Entdecken Sie unsere exklusive Fahrzeugflotte und genießen Sie erstklassigen Service
+            </p>
+
+            <!-- Contact Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <a href="https://wa.me/IHRE_NUMMER" target="_blank"
+                   class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold flex items-center gap-3 hover-scale shadow-xl">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    WhatsApp Business
+                </a>
+                <a href="https://t.me/IHR_USERNAME" target="_blank"
+                   class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full font-semibold flex items-center gap-3 hover-scale shadow-xl">
+                    <i class="fab fa-telegram text-2xl"></i>
+                    Telegram
+                </a>
+                <a href="mailto:info@autovermietung.de"
+                   class="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full font-semibold flex items-center gap-3 hover-scale shadow-xl">
+                    <i class="fas fa-envelope text-2xl"></i>
+                    E-Mail
+                </a>
+                <a href="tel:+49123456789"
+                   class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-full font-semibold flex items-center gap-3 hover-scale shadow-xl">
+                    <i class="fas fa-phone text-2xl"></i>
+                    Anrufen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fahrzeugkategorien Section -->
+    <section id="fahrzeuge" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Unsere Fahrzeugflotte</h2>
+                <p class="text-xl text-gray-600">Finden Sie das perfekte Fahrzeug für Ihre Bedürfnisse</p>
+            </div>
+
+            <!-- Fahrzeug Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Kleinwagen -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+                    <div class="bg-gradient-to-r from-blue-400 to-blue-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-car text-white text-7xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Kleinwagen</h3>
+                        <p class="text-gray-600 mb-4">Perfekt für die Stadt - sparsam und wendig</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <i class="fas fa-users text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">4-5 Personen</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-gas-pump text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">Sparsam</span>
+                            </div>
+                        </div>
+                        <div class="border-t pt-4">
+                            <p class="text-3xl font-bold text-purple-600">ab 29€ <span class="text-lg text-gray-500 font-normal">/Tag</span></p>
+                        </div>
+                        <button class="w-full mt-4 bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition">
+                            Jetzt buchen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SUV -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+                    <div class="bg-gradient-to-r from-green-400 to-green-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-truck-monster text-white text-7xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">SUV</h3>
+                        <p class="text-gray-600 mb-4">Geräumig und komfortabel für jedes Gelände</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <i class="fas fa-users text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">5-7 Personen</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-suitcase text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">Viel Platz</span>
+                            </div>
+                        </div>
+                        <div class="border-t pt-4">
+                            <p class="text-3xl font-bold text-purple-600">ab 69€ <span class="text-lg text-gray-500 font-normal">/Tag</span></p>
+                        </div>
+                        <button class="w-full mt-4 bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition">
+                            Jetzt buchen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Limousine -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+                    <div class="bg-gradient-to-r from-purple-400 to-purple-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-car-side text-white text-7xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Limousine</h3>
+                        <p class="text-gray-600 mb-4">Eleganz und Komfort für Business & Reisen</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <i class="fas fa-users text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">4-5 Personen</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-star text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">Premium</span>
+                            </div>
+                        </div>
+                        <div class="border-t pt-4">
+                            <p class="text-3xl font-bold text-purple-600">ab 59€ <span class="text-lg text-gray-500 font-normal">/Tag</span></p>
+                        </div>
+                        <button class="w-full mt-4 bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition">
+                            Jetzt buchen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Kombi -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+                    <div class="bg-gradient-to-r from-orange-400 to-orange-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-shuttle-van text-white text-7xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Kombi</h3>
+                        <p class="text-gray-600 mb-4">Ideal für Familien und viel Gepäck</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <i class="fas fa-users text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">5 Personen</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-suitcase text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">XXL Kofferraum</span>
+                            </div>
+                        </div>
+                        <div class="border-t pt-4">
+                            <p class="text-3xl font-bold text-purple-600">ab 49€ <span class="text-lg text-gray-500 font-normal">/Tag</span></p>
+                        </div>
+                        <button class="w-full mt-4 bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition">
+                            Jetzt buchen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Lieferwagen -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+                    <div class="bg-gradient-to-r from-red-400 to-red-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-truck text-white text-7xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Lieferwagen</h3>
+                        <p class="text-gray-600 mb-4">Für Umzüge und große Transporte</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <i class="fas fa-users text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">2-3 Personen</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-box text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">Bis 3,5t</span>
+                            </div>
+                        </div>
+                        <div class="border-t pt-4">
+                            <p class="text-3xl font-bold text-purple-600">ab 79€ <span class="text-lg text-gray-500 font-normal">/Tag</span></p>
+                        </div>
+                        <button class="w-full mt-4 bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition">
+                            Jetzt buchen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Premium Sportwagen (Bonus) -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+                    <div class="bg-gradient-to-r from-yellow-400 to-yellow-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-car-sports text-white text-7xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Sportwagen</h3>
+                        <p class="text-gray-600 mb-4">Luxus und Performance pur</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <i class="fas fa-users text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">2 Personen</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-crown text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">Exklusiv</span>
+                            </div>
+                        </div>
+                        <div class="border-t pt-4">
+                            <p class="text-3xl font-bold text-purple-600">ab 199€ <span class="text-lg text-gray-500 font-normal">/Tag</span></p>
+                        </div>
+                        <button class="w-full mt-4 bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition">
+                            Jetzt buchen
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Vorteile Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Warum Premium Cars?</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Vollkaskoversicherung</h3>
+                    <p class="text-gray-600">Alle Fahrzeuge sind vollversichert</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">24/7 Service</h3>
+                    <p class="text-gray-600">Rund um die Uhr für Sie da</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tag text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Faire Preise</h3>
+                    <p class="text-gray-600">Keine versteckten Kosten</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="gradient-bg py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Bereit loszufahren?</h2>
+            <p class="text-xl text-white/90 mb-8">Kontaktieren Sie uns jetzt und sichern Sie sich Ihr Wunschfahrzeug!</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://wa.me/IHRE_NUMMER" target="_blank"
+                   class="bg-white hover:bg-gray-100 text-purple-600 px-8 py-4 rounded-full font-semibold flex items-center gap-3 hover-scale shadow-xl">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    WhatsApp schreiben
+                </a>
+                <a href="tel:+49123456789"
+                   class="bg-white hover:bg-gray-100 text-purple-600 px-8 py-4 rounded-full font-semibold flex items-center gap-3 hover-scale shadow-xl">
+                    <i class="fas fa-phone text-2xl"></i>
+                    Jetzt anrufen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-car text-purple-400 text-3xl mr-3"></i>
+                <span class="text-2xl font-bold">Premium Cars</span>
+            </div>
+            <p class="text-gray-400 mb-6">Ihre vertrauensvolle Autovermietung</p>
+            <div class="flex justify-center gap-6 mb-6">
+                <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2024 Premium Cars. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
